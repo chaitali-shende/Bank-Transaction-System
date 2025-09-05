@@ -26,14 +26,23 @@ This project demonstrates **basic CRUD operations** and **transaction management
 ## 📂 Project Structure
 
 BankTransactionProject/
+
 │── src/com/jdbc/transaction/
+
 │ ├── Account.java
+
 │ ├── AccountOperations.java
+
 │ ├── Account_Operation.java (Main class with Menu)
+
 │ ├── BankAccountTable.java (Table & Sequence creation)
+
 │ ├── ConnectionProvider.java
+
 │
+
 │── connection.properties # DB connection details
+
 │── README.md # Project Documentation
 
 
@@ -41,15 +50,27 @@ BankTransactionProject/
 
 📸 Sample Output
 
+
 --- Banking System Menu ---
+
 Press 1 → Insert New Account
+
 Press 2 → View All Accounts
+
 Press 3 → Deposit & Withdraw (Transaction)
+
 Press 4 → Exit
 
+
+
 Enter your choice: 3
+
 Enter Account Number: 1002
+
 Enter the amount to deposit: 500
+
 Amount Deposited Successfully!!
+
 Enter the amount to withdraw: 200
+
 Transaction Successful! Amount Deposited: Rs.500.0, Amount Withdrawn: Rs.200.0
