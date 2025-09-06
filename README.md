@@ -2,6 +2,7 @@
 
 A simple **Banking System** project built with **Java (JDBC)** and **Oracle Database**.  
 This project demonstrates **basic CRUD operations** and **transaction management** (Deposit & Withdraw) using **JDBC with transaction handling**.
+It’s a great hands-on example of integrating Java with Oracle for real-world database applications
 
 ---
 
@@ -80,7 +81,7 @@ Safely closes the application and database connection.
 
 ---
 
-📸 Sample Output
+**📸 Sample Output**
 
 
 --- Banking System Menu ---
@@ -109,7 +110,7 @@ Transaction Successful! Amount Deposited: Rs.500.0, Amount Withdrawn: Rs.200.0
 
 ---
 
-🧑‍💻 Skills Demonstrated
+**🧑‍💻 Skills Demonstrated**
 
 Java fundamentals and OOP design
 
@@ -125,7 +126,7 @@ Console UI design
 
 ---
 
-🚧 Future Enhancements
+**🚧 Future Enhancements**
 
 Add user authentication & roles (Admin/User).
 
