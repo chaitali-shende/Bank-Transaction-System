@@ -8,9 +8,13 @@ This project demonstrates **basic CRUD operations** and **transaction management
 ## 🚀 key Features
 
 ✅ Create Accounts — Insert new bank accounts with auto-generated account numbers (via Oracle Sequence).
+
 ✅ View Accounts — Display all existing bank accounts in a neatly formatted list.
+
 ✅ Deposit & Withdraw (Atomic Transaction) — Perform deposit and withdrawal together as a single transaction with commit/rollback handling to maintain data integrity.
+
 ✅ Input Validation — Ensures deposit amount > 0 & multiples of 100, checks sufficient balance before withdrawal.
+
 ✅ User-Friendly Console Menu — Intuitive menu-driven interface for seamless interaction.
 
 ---
