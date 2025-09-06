@@ -5,21 +5,23 @@ This project demonstrates **basic CRUD operations** and **transaction management
 
 ---
 
-## 🚀 Features
-- Create new bank accounts (auto-generated account numbers using Oracle Sequence).
-- View all existing bank accounts.
-- Deposit and Withdraw as a single **transaction** (commit/rollback).
-- Input validation (deposit > 0 and multiple of 100, withdrawal with sufficient balance).
-- Console-based user-friendly menu.
+## 🚀 key Features
+
+✅ Create Accounts — Insert new bank accounts with auto-generated account numbers (via Oracle Sequence).
+✅ View Accounts — Display all existing bank accounts in a neatly formatted list.
+✅ Deposit & Withdraw (Atomic Transaction) — Perform deposit and withdrawal together as a single transaction with commit/rollback handling to maintain data integrity.
+✅ Input Validation — Ensures deposit amount > 0 & multiples of 100, checks sufficient balance before withdrawal.
+✅ User-Friendly Console Menu — Intuitive menu-driven interface for seamless interaction.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Java** (Core + JDBC)  
-- **Oracle Database** (SQL, Sequence, Table)  
-- **JDBC Transaction Management**  
-- **Eclipse IDE**  
+- **Java** (Core + JDBC) — For application logic and DB connectivity 
+- **Oracle Database** (SQL, Sequence, Table) - For persistent storage, sequences and tables  
+- **JDBC Transaction Management** — Handling commit & rollback 
+- **Eclipse IDE** — For development and testing
+
 
 ---
 
@@ -29,22 +31,48 @@ BankTransactionProject/
 
 │── src/com/jdbc/transaction/
 
-│ ├── Account.java
+│ ├── Account.java                                              # Model class for account entity
 
-│ ├── AccountOperations.java
+│ ├── AccountOperations.java                                    # CRUD & transaction operations
 
-│ ├── Account_Operation.java (Main class with Menu)
+│ ├── Account_Operation.java                                    # Main class with Menu-driven UI
 
-│ ├── BankAccountTable.java (Table & Sequence creation)
+│ ├── BankAccountTable.java                                     # Table & Sequence creation script
 
-│ ├── ConnectionProvider.java
+│ ├── ConnectionProvider.java                                   # JDBC connection provider
 
 │
 
-│── connection.properties # DB connection details
+│── connection.properties # DB connection details              # DB connection details
+ 
+│── README.md # Project Documentation                            # Project documentation
 
-│── README.md # Project Documentation
 
+---
+
+📝 How It Works
+
+Insert New Account
+
+User enters account details.
+
+Account number auto-generated via Oracle sequence.
+
+View All Accounts
+
+Fetches and displays all records from the Oracle table.
+
+Deposit & Withdraw (Transaction)
+
+Takes deposit and withdrawal input.
+
+Executes both as one transaction.
+
+Rolls back if any step fails, ensuring consistency.
+
+Exit
+
+Safely closes the application and database connection.
 
 ---
 
@@ -74,3 +102,31 @@ Amount Deposited Successfully!!
 Enter the amount to withdraw: 200
 
 Transaction Successful! Amount Deposited: Rs.500.0, Amount Withdrawn: Rs.200.0
+
+---
+
+🧑‍💻 Skills Demonstrated
+
+Java fundamentals and OOP design
+
+JDBC setup and connection pooling
+
+SQL DDL/DML with Oracle (Tables, Sequences)
+
+Transaction handling with commit & rollback
+
+Input validation and error handling
+
+Console UI design
+
+---
+
+🚧 Future Enhancements
+
+Add user authentication & roles (Admin/User).
+
+Provide GUI using JavaFX or Swing.
+
+Add interest calculation and statement generation.
+
+Integrate with web layer using Spring Boot & REST APIs.
